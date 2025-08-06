@@ -9,7 +9,6 @@ import { createSlice } from "@reduxjs/toolkit";
     addTodo: (state, action) => {
       const newTodo = {
         todo: action.payload,
-     
       };
       state.todos.push(newTodo);
     },
