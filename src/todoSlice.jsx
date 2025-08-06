@@ -7,10 +7,9 @@ import { createSlice } from "@reduxjs/toolkit";
     },
     reducers: {           
     addTodo: (state, action) => {
-      const newTodo = {
-        todo: action.payload,
-      };
-      state.todos.push(newTodo);
+    state.todos.push({
+    todo: action.payload,
+  });
     },
     removeTodo: (state, action) => {
       state.todos = state.todos.filter((_,index) => index !== action.payload);
